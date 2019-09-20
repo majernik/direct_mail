@@ -215,7 +215,7 @@ class JumpurlController
                 )
                 ->execute();
 
-            $row = $res->fetchAll();
+            $row = $res->fetch();
 
             if ($row) {
                 if (is_array($row)) {
